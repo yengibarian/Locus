@@ -13,6 +13,7 @@ a{
     text-decoration: none;
 }
 
+
 button{
     width: 271px;
     background: #58A9A5;
@@ -67,7 +68,24 @@ header{
 .header{
     display: flex;
     justify-content: space-between;
-    align-items: centera;
+    align-items: center;
+}
+
+.burger{
+    display: none;
+    cursor: pointer;
+}
+
+.logo-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-nav{
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
 }
 
 .logo{
@@ -110,10 +128,12 @@ ul li a{
     font-size: 20px;
     line-height: 27px;
     color: #404242;
+    padding: 5px 10px;
 }
 
 ul li a:hover{
-    color: #58A9A5;
+    background: #58A9A5;
+    color: white;
 }
 
 
@@ -505,6 +525,215 @@ input{
     }
 }
 
-@media screen and (max-width: 996px){
+@media screen and (max-width: 960px){
+    .header{
+        flex-direction: column;
+    }
+    .logo{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .container{
+        max-width: 700px;
+    }
+    .header-nav{
+        display: none;
+        transition: all 1s;
+    }
+    nav ul{
+        flex-direction: column;
+        align-items: start;
+    }
 
+    ul li{
+        margin: 10px 0;
+    }
+    .show{
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        background: #fbf8f8;
+        padding: 30px 0;
+        transition: all 1s;
+    }
+    nav{
+        margin: 0  50px;
+    }
+    .header-nav button{
+        margin: 30px 50px 0 50px;
+    }
+    .burger{
+        display: block;
+    }
+
+    .burger>i{
+        font-size: 35px;
+        color: #58A9A5;
+    }
+
+    h4{
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .how-img img {
+        max-width: 450px
+    }
+    .how-content {
+        height: 250px;
+    }
+    h3 {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .contact{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact h2,h2{
+        text-align: center;
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .project{
+        justify-content: center;
+        margin: 0;
+    }
+
+    .project-item{
+        margin: 25px 0;
+    }
+    .our-img img {
+        max-height: 300px;
+    }
+    .our-text {
+        padding: 0 30px;
+    }
+
+    .about{
+        flex-direction: column;
+    }
+    .about-img img {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    section{
+        margin-bottom: 70px;
+    }
+}
+
+
+@media  screen and (max-width:700px) {
+    .container{
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .how-content,.our,.design{
+        display: flex;
+        flex-direction: column;
+    }
+    header{
+        padding: 30px 0;
+    }
+    body{
+        padding:  0 20px;
+    }
+    .how-img img {
+        max-width: 325px;
+    }
+    .design-text {
+        padding: 10px  0px;
+    }
+    .design-text h2 {
+        text-align: center;
+    }
+    .design{
+        text-align: center;
+    }
+    .how-text a {
+        margin: 25px 0 0 0 ;
+    }
+    .design-text button{
+        margin: 0 auto;
+    }
+    .our-img img {
+        max-width: 100%;
+    }
+    .our-text {
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .our-project p{
+        text-align: center;
+    }
+    .our-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .how-text{
+        border-radius: 0;
+        width: 265px;
+    }
+    .project-item p {
+        font-size: 18px;
+        line-height: 25px;
+    }
+    h4,h2{
+        font-size: 28px;
+        line-height: 33px;
+    }
+    .text-info p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .test-item{
+        margin: 25px 0;
+    }
+    section{
+        margin-bottom: 30px;
+    }
+    .our-img img {
+        margin-top: 20px;
+    }
+    .our-text {
+        padding: 0 20px;
+    }
+    h6 {
+        font-size: 22px;
+    }
+    .contact-text {
+        padding-right: 0px;
+    }
+    .contact-text {
+        width: 100%;
+    }
+    button{
+        padding: 15px;
+    }
+    input{
+        font-size: 20px;
+    }
+
+    .our{
+        margin-top: 50px;
+    }
+}
+
+@media  screen and (max-width:500px) {
+    .container{
+        max-width: 325px;
+        margin: 0 auto;
+        padding: 0;
+    }
 }
